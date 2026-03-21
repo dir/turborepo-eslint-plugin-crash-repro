@@ -1,4 +1,14 @@
 {
   "name": "tooling-config",
-  "description": "A package used by every other package."
+  "private": true,
+  "description": "A package used by every other package.",
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.1.0",
+    "eslint-plugin-turbo": "2.8.21-canary.2"
+  }
 }

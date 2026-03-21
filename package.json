@@ -1,9 +1,13 @@
 {
   "name": "my-turborepo",
-  "description": "A barebones Turborepo example for working with Task Graphs.",
   "private": true,
-  "packageManager": "pnpm@8.15.6",
+  "description": "A barebones Turborepo example for working with Task Graphs.",
+  "scripts": {
+    "lint": "turbo run lint"
+  },
   "devDependencies": {
-    "turbo": "^2.8.20"
-  }
+    "eslint-plugin-turbo": "2.8.21-canary.2",
+    "turbo": "2.8.21-canary.2"
+  },
+  "packageManager": "pnpm@8.15.6"
 }
