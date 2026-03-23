@@ -1,5 +1,8 @@
 # `eslint-plugin-turbo` crash reproduction
 
+> [!IMPORTANT]
+> This bug has been resolved in https://github.com/vercel/turborepo/pull/12411.
+
 ## Info
 
 `eslint-plugin-turbo` crashes at import time (i.e. running ESLint) when a [package configuration](https://turborepo.dev/docs/reference/package-configurations) (`turbo.json`/`turbo.jsonc`) does not define the `"tasks"` (or legacy `"pipeline"`) key. I have tested this bug on numerous versions of `turbo`, `eslint-plugin-turbo`, as well as on ESLint 9 & 10. The error occurs in all variations. This project is using ESLint 10, `turbo@canary`, and `eslint-plugin-turbo@canary`.
